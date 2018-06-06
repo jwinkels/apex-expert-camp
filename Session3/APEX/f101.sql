@@ -27,7 +27,7 @@ prompt APPLICATION 101 - OC|Task Board
 -- Application Export:
 --   Application:     101
 --   Name:            OC|Task Board
---   Date and Time:   14:48 Wednesday June 6, 2018
+--   Date and Time:   16:29 Wednesday June 6, 2018
 --   Exported By:     ADMIN
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -115,7 +115,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'OC|Task Board'
 ,p_last_updated_by=>'ADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20180606144739'
+,p_last_upd_yyyymmddhh24miss=>'20180606162244'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -142,6 +142,7 @@ wwv_flow_api.create_list_item(
 ,p_list_item_display_sequence=>40
 ,p_list_item_link_text=>'Tasks'
 ,p_list_item_link_target=>'f?p=&APP_ID.:100:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-tasks'
 ,p_parent_list_item_id=>wwv_flow_api.id(4443121513718228)
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'100'
@@ -151,6 +152,7 @@ wwv_flow_api.create_list_item(
 ,p_list_item_display_sequence=>50
 ,p_list_item_link_text=>'Dashboard'
 ,p_list_item_link_target=>'f?p=&APP_ID.:200:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-dashboard'
 ,p_parent_list_item_id=>wwv_flow_api.id(4443121513718228)
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'200'

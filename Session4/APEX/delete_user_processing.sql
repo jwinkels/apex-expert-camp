@@ -1,0 +1,1 @@
+octb_users_api.delete_row(:P910_USER_ID);

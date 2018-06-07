@@ -1,0 +1,1 @@
+octb_tasks_api.delete_row(:P110_TASK_ID);

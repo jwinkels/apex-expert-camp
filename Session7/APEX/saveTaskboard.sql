@@ -4,6 +4,6 @@ declare
 begin
   r_row.label := :P10_LABEL;
   r_row.DESCR := :P10_DESCR;
-  r_row.author_id := :APP_USER_ID;
+  r_row.author_id := octb_users_api.get_pk_by_unique_cols(upper(:APP_USER));
   v_task_board_id := octb_task_board_api.create_row(r_row);
 end;  
